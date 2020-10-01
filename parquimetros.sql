@@ -54,16 +54,15 @@ CREATE TABLE tipos_tarjeta(
 # Creación de tablas para las relaciones
 
 CREATE TABLE asociado_con(
-    # /* id_asociado_con, con o sin autoincrement??? */
     id_asociado_con INT(20) UNSIGNED NOT NULL AUTO_INCREMENT,
     legajo INT(8) UNSIGNED NOT NULL,
     calle  VARCHAR(45) NOT NULL,
     altura INT(5) UNSIGNED NOT NULL,
+    # dia ENUM ('do','lu','ma','mi','ju','vi','sa')
     dia VARCHAR(2) NOT NULL,
-    # /* habría que restringir que SÓLO tomen los valores M o T? */
     turno VARCHAR(1) NOT NULL,
 
-    CONSTRAINT chk_turno CHECK (turno = 'M' OR turno = 'T'),
+    # CONSTRAINT chk_turno CHECK (turno = 'M' OR turno = 'T'),
 
     CONSTRAINT pk_asociado_con
     PRIMARY KEY (id_asociado_con),
@@ -84,7 +83,7 @@ CREATE TABLE multas (
     fecha DATE NOT NULL,
     hora TIME NOT NULL,
     patente VARCHAR(6) NOT NULL,
-    # /* id_asociado_con, con o sin autoincrement??? */
+    # /* id_asociado_con, VA SIN AUTOINCREMENT */
     id_asociado_con INT(20) UNSIGNED NOT NULL, 
 
     CONSTRAINT pk_multas

@@ -1,3 +1,3 @@
 - para qué sirve key?
-- id_asociado_con, con o sin autoincrement???
-- turnos solamente M o T?
+
+- legajo va a ser un autoincrement.
