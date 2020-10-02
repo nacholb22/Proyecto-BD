@@ -4,4 +4,4 @@
 
 - En la tabla de inspectores, password hay que ponerle algo mas? o solo se encripta cuando se inserta?
 
-- NACHO LOPEZ
+- NACHO LOPEZ NO PUEDA HACER PULL
