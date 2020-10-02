@@ -1,3 +1,5 @@
-- para qué sirve key?
+- Inspector: cómo otorgamos privilegios mínimos para validar legajo y password?
+- multas: habría que dar acceso a algo más además de las multas? (es decir, debería poder seleccionar los atributos de asociado_con?)
 
-- legajo va a ser un autoincrement.
+
+- En la tabla de inspectores, password hay que ponerle algo mas? o solo se encripta cuando se inserta?
